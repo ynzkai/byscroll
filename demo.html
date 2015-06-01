@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>ByScroll Demo</title>
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.byscroll.js"></script>
+	<script type="text/javascript">
+	  $(document).ready(function() {
+	    $("#item1").listenedByScroll("animated rubberBand");
+	    $("#item2").listenedByScroll("animated flipInX");
+	    $("#item3").listenedByScroll("animated bounceInUp");
+	    $("#item4").listenedByScroll("animated fadeInLeft");
+	    $("#item5").listenedByScroll("animated fadeInRight");
+	    $("#item6").listenedByScroll("animated fadeInUp");
+	    $("#item7").listenedByScroll("animated rotateInUpRight");
+	    $("#item8").listenedByScroll("animated rotateInUpLeft");
+	  });
+	</script>
+	<link rel="stylesheet" href="css/animate.css">
+	<style type="text/css">
+	  .item {
+		  height:300px;
+		  background-color: #fda;
+	  }
+	  .item:nth-child(odd) {
+		  background-color: #cfc;
+	  }
+	</style>
+</head>
+<body>
+<div class="container">
+  <div id="item1" class="item"></div>
+  <div id="item2" class="item"></div>
+  <div id="item3" class="item"></div>
+  <div id="item4" class="item"></div>
+  <div id="item5" class="item"></div>
+  <div id="item6" class="item"></div>
+  <div id="item7" class="item"></div>
+  <div id="item8" class="item"></div>
+</div>
+</body>
+</html>
+
